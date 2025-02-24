@@ -34,7 +34,7 @@ index 7661dcab..c99bfd98 100755
      },
      "autoload": {
 diff --git a/composer.lock b/composer.lock
-index 22faeae7..5324cc55 100644
+index 22faeae7..3a4e1bbd 100644
 --- a/composer.lock
 +++ b/composer.lock
 @@ -4,7 +4,7 @@
@@ -51,19 +51,19 @@ index 22faeae7..5324cc55 100644
          {
              "name": "laminas/laminas-code",
 -            "version": "4.4.2",
-+            "version": "4.13.0",
++            "version": "4.16.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/laminas/laminas-code.git",
 -                "reference": "54251ab2b16c41c6980387839496b235f5f6e10b"
-+                "reference": "7353d4099ad5388e84737dd16994316a04f48dbf"
++                "reference": "1793e78dad4108b594084d05d1fb818b85b110af"
              },
              "dist": {
                  "type": "zip",
 -                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/54251ab2b16c41c6980387839496b235f5f6e10b",
 -                "reference": "54251ab2b16c41c6980387839496b235f5f6e10b",
-+                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/7353d4099ad5388e84737dd16994316a04f48dbf",
-+                "reference": "7353d4099ad5388e84737dd16994316a04f48dbf",
++                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/1793e78dad4108b594084d05d1fb818b85b110af",
++                "reference": "1793e78dad4108b594084d05d1fb818b85b110af",
                  "shasum": ""
              },
              "require": {
@@ -71,7 +71,7 @@ index 22faeae7..5324cc55 100644
 -            },
 -            "conflict": {
 -                "phpspec/prophecy": "<1.9.0"
-+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
++                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
              },
              "require-dev": {
 -                "doctrine/annotations": "^1.10.4",
@@ -82,10 +82,10 @@ index 22faeae7..5324cc55 100644
 -                "phpunit/phpunit": "^9.4.2",
 -                "psalm/plugin-phpunit": "^0.14.0",
 -                "vimeo/psalm": "^4.3.1"
-+                "laminas/laminas-coding-standard": "^2.5.0",
-+                "laminas/laminas-stdlib": "^3.17.0",
-+                "phpunit/phpunit": "^10.3.3",
-+                "psalm/plugin-phpunit": "^0.18.4",
++                "laminas/laminas-coding-standard": "^3.0.0",
++                "laminas/laminas-stdlib": "^3.18.0",
++                "phpunit/phpunit": "^10.5.37",
++                "psalm/plugin-phpunit": "^0.19.0",
 +                "vimeo/psalm": "^5.15.0"
              },
              "suggest": {
@@ -101,7 +101,7 @@ index 22faeae7..5324cc55 100644
                  }
              ],
 -            "time": "2021-07-09T11:58:40+00:00"
-+            "time": "2023-10-18T10:00:55+00:00"
++            "time": "2024-11-20T13:15:13+00:00"
          },
          {
              "name": "michelf/php-markdown",
@@ -223,7 +223,12 @@ index 22faeae7..5324cc55 100644
          {
              "name": "symfony/var-dumper",
              "version": "v5.3.7",
-@@ -6700,13 +6807,13 @@
+@@ -6696,17 +6803,17 @@
+     ],
+     "aliases": [],
+     "minimum-stability": "stable",
+-    "stability-flags": [],
++    "stability-flags": {},
      "prefer-stable": false,
      "prefer-lowest": false,
      "platform": {
@@ -232,7 +237,8 @@ index 22faeae7..5324cc55 100644
          "ext-ctype": "*",
          "ext-iconv": "*"
      },
-     "platform-dev": [],
+-    "platform-dev": [],
++    "platform-dev": {},
      "platform-overrides": {
 -        "php": "7.4.1"
 +        "php": "8.1.0"
